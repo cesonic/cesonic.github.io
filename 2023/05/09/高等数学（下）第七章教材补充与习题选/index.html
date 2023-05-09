@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>高等数学（下）第七章教材补充与习题选 | CSonic's Blog</title><meta name="author" content="CSonic"><meta name="copyright" content="CSonic"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文是笔者大一的数学笔记，搬运过来并顺便测试 \(latex\) 渲染效果。 参考教科书是《高等数学（下册）》，华南理工大学数学系，高等教育出版社。 第一节 多元函数 \[\text{7.1.1. 讨论} \mathop{\lim}\limits_{x\rightarrow 0\atop y\rightarrow0} \frac{x^3y}{x^6+y^2} \text{是否存在.}\]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高等数学（下）第七章教材补充与习题选">
+<meta property="og:url" content="http://cesonic.github.io/2023/05/09/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%EF%BC%88%E4%B8%8B%EF%BC%89%E7%AC%AC%E4%B8%83%E7%AB%A0%E6%95%99%E6%9D%90%E8%A1%A5%E5%85%85%E4%B8%8E%E4%B9%A0%E9%A2%98%E9%80%89/index.html">
+<meta property="og:site_name" content="CSonic&#39;s Blog">
+<meta property="og:description" content="本文是笔者大一的数学笔记，搬运过来并顺便测试 \(latex\) 渲染效果。 参考教科书是《高等数学（下册）》，华南理工大学数学系，高等教育出版社。 第一节 多元函数 \[\text{7.1.1. 讨论} \mathop{\lim}\limits_{x\rightarrow 0\atop y\rightarrow0} \frac{x^3y}{x^6+y^2} \text{是否存在.}\]">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-05-08T18:05:50.000Z">
+<meta property="article:modified_time" content="2023-05-08T18:15:39.644Z">
+<meta property="article:author" content="CSonic">
+<meta property="article:tag" content="math">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/35N%5DST33T9YLOJT%7DFV8BDF0.gif"><link rel="canonical" href="http://cesonic.github.io/2023/05/09/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%EF%BC%88%E4%B8%8B%EF%BC%89%E7%AC%AC%E4%B8%83%E7%AB%A0%E6%95%99%E6%9D%90%E8%A1%A5%E5%85%85%E4%B8%8E%E4%B9%A0%E9%A2%98%E9%80%89/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '高等数学（下）第七章教材补充与习题选',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-09 02:15:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="CSonic's Blog"><span class="site-name">CSonic's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">高等数学（下）第七章教材补充与习题选</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-05-08T18:05:50.000Z" title="Created 2023-05-09 02:05:50">2023-05-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-05-08T18:15:39.644Z" title="Updated 2023-05-09 02:15:39">2023-05-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="高等数学（下）第七章教材补充与习题选"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>本文是笔者大一的数学笔记，搬运过来并顺便测试 <span class="math inline">\(latex\)</span> 渲染效果。</p>
+<p>参考教科书是《高等数学（下册）》，华南理工大学数学系，高等教育出版社。</p>
+<h2 id="第一节-多元函数">第一节 多元函数</h2>
+<p><span class="math display">\[\text{7.1.1. 讨论} \mathop{\lim}\limits_{x\rightarrow 0\atop y\rightarrow0} \frac{x^3y}{x^6+y^2} \text{是否存在.}\]</span></p>
+<p>证明这种题常用 <span class="math inline">\(y=kx\)</span> 一类的代换使得从不同方向逼近一个不同极限来证明该极限不存在.</p>
+<p>为了使得得出的表达式与趋于0的 <span class="math inline">\(x,y\)</span> 无关，可以取 <span class="math inline">\(y=kx^3\)</span> ，从而 <span class="math inline">\(\text{原式}=\mathop{\lim}\limits_{x\rightarrow 0\atop y\rightarrow0} \frac{kx^6}{x^6+k^2x^6}=\frac{k}{1+k^2}\)</span> ，该式与 <span class="math inline">\(k\)</span> 有关，所以极限不存在.</p>
+<p><span class="math display">\[\text{7.1.2.讨论极限} \mathop{\lim}\limits_{x\rightarrow 0\atop y\rightarrow0 }\frac{x^2y^2}{x^4+y^4}\]</span></p>
+<p>另外介绍一种课本未提到的方法：利用极坐标转换计算极限相关问题，即作代换 <span class="math inline">\(x=r\cos \theta , y= r\sin \theta\)</span>，则原来的趋近条件变成 $r0 $ ，这也是符合甚至直观上更符合多元函数的极限定义的（一个点的任意小邻域）。</p>
+<p>利用以上代换，原式变为 <span class="math inline">\(\frac{r^2}{r^4(\cos^4 \theta+\sin^4 \theta)}\)</span>，约去 <span class="math inline">\(r^2\)</span> 后得到极限不存在的结论。</p>
+<p><span class="math display">\[\text{7.1.3 讨论极限} \mathop{\lim}\limits_{x\rightarrow 0\atop y\rightarrow0 } \frac{\sqrt{x^2+y^2}-\sin \sqrt{x^2+y^2}}{(x^2+y^2)^\frac{3}{2} }\]</span></p>
+<p>利用以上方法，得到 <span class="math inline">\(\text{原式}=\frac{r-\sin r}{r^3}\)</span> ，洛必达三次得到该极限为 <span class="math inline">\(\frac{1}{6}\)</span>.</p>
+<h2 id="第二节-偏导数">第二节 偏导数</h2>
+<p>要注意对于多元函数的偏导数而言，<span class="math inline">\(\frac{\partial x}{\partial z}\)</span> 一类将分子分母拆开没有意义的。</p>
+<p>定理：若函数 <span class="math inline">\(z=f(x,y)\)</span> 的两个二阶混合偏导数 <span class="math inline">\(\frac{\partial ^2z}{\partial x\partial y},\frac{\partial ^2z}{\partial y\partial x}\)</span> 在区域 <span class="math inline">\(D\)</span> 内连续，则在该区域内两个混合偏导数相等，即</p>
+<p><span class="math display">\[\frac{\partial ^2z}{\partial x\partial y}=\frac{\partial ^2z}{\partial y\partial x}\]</span></p>
+<p>参考教科书没有给出证明，这里补充一个：</p>
+<p>考虑表达式：</p>
+<p><span class="math display">\[W=\frac{f(x+\Delta x,y+\Delta y)-f(x+\Delta x,y)-f(x,y+\Delta y)+f(x,y)}{\Delta x\Delta y}\]</span></p>
+<p>其中 <span class="math inline">\(\Delta x,\Delta y\neq 0\)</span> 且充分小。</p>
+<p>引入函数：</p>
+<p><span class="math display">\[\phi(x,y)=f(x,y+\Delta y)-f(x,y) \qquad (1)\]</span></p>
+<p>则</p>
+<p><span class="math display">\[W=\frac{\phi(x+\Delta x,y)-\phi(x,y)}{\Delta x\Delta y}\]</span></p>
+<p>视 <span class="math inline">\(y\)</span> 为常量，利用拉格朗日中值定理，有</p>
+<p><span class="math display">\[\phi(x+\Delta x,y)-\phi(x,y)=\phi_x(x+\theta_1\Delta x,y)\Delta x\]</span></p>
+<p>与此同时，对 <span class="math inline">\((1)\)</span> 式求导，得到</p>
+<p><span class="math display">\[\phi_x(x+\theta_1 \Delta x,y)=f_x(x+\theta_1\Delta x,y+\Delta y)-f_x(x+\theta_1\Delta x,y)\]</span></p>
+<p>由于<strong>偏导数连续</strong>，因此将 <span class="math inline">\(x+\theta_1\Delta x\)</span> 视为常量，对等式右边再利用一次拉格朗日中值定理，得到：</p>
+<p><span class="math display">\[f_x(x+\theta_1\Delta x,y+\Delta y)-f_x(x+\theta_1\Delta x,y)=f_x(x+\theta_1\Delta x,y+\theta_2\Delta y)\Delta y\]</span></p>
+<p>由以上推导，得到 <span class="math inline">\(W=f_{xy}(x+\theta_1\Delta x,y+\theta_2\Delta y)\)</span></p>
+<p>类似地，如果我们将 <span class="math inline">\((1)\)</span> 式改成</p>
+<p><span class="math display">\[\psi(x,y)=f(x+\Delta x,y)-f(x,y)\]</span></p>
+<p>再做类似的步骤，可以得到 <span class="math inline">\(W=f_{yx}(x+\theta_3\Delta x,y+\theta_4\Delta y)\)</span></p>
+<p>因此有</p>
+<p><span class="math display">\[f_{xy}(x+\theta_1\Delta x,y+\theta_2\Delta y)=W=f_{yx}(x+\theta_3\Delta x,y+\theta_4\Delta y)\]</span></p>
+<p>令 <span class="math inline">\(\Delta x\rightarrow0,\Delta y\rightarrow0\)</span>，得到</p>
+<p><span class="math display">\[f_{xy}(x,y)=f_{yx}(x,y)\]</span></p>
+<p>此即为待证式，证毕。</p>
+<p>值得一提的是，这个证明与下一章可微分的充分条件（见下）的证明异曲同工。都是利用拉格朗日中值定理变换出需要的偏导数形式，而因为使用了中值定理，所以都要求函数连续。同时这两个定理的条件都是充分不必要条件，很有对称美。</p>
+<blockquote>
+<p>如果函数 <span class="math inline">\(z=f(x,y)\)</span> 的两个偏导数在 <span class="math inline">\((x_0,y_0)\)</span> 存在且连续，则该函数在 <span class="math inline">\((x_0,y_0)\)</span> 可微。</p>
+</blockquote>
+<p>若在这里也贴上证明会更好，但是课本已有，篇幅所限就不贴了。</p>
+<h2 id="第三节-全微分及其应用">第三节 全微分及其应用</h2>
+<p>必要条件：</p>
+<p>若 <span class="math inline">\(z\)</span> 在 <span class="math inline">\((x_0,y_0)\)</span> 可微 ，则</p>
+<p><span class="math inline">\(z\)</span> 在 <span class="math inline">\((x_0,y_0)\)</span> 连续，偏导数存在，且满足：</p>
+<p><span class="math display">\[\mathrm{d}z \biggr |_{(x_0,y_0)}=\frac{\partial z}{\partial x}\biggr |_{(x_0,y_0)}\cdot \Delta x+\frac{\partial z}{\partial y}\biggr |_{(x_0,y_0)}\cdot \Delta y\]</span></p>
+<p>注意，使用该公式前需要证明可微。</p>
+<p>充分条件：</p>
+<p>若 <span class="math inline">\(z\)</span> 在 <span class="math inline">\((x_0,y_0)\)</span> 处的偏导数存在且连续，则 <span class="math inline">\(z\)</span> 在 <span class="math inline">\((x_0,y_0)\)</span> 可微。</p>
+<p>要注意，以上都<strong>不是充分必要条件</strong>。</p>
+<p>经典例题：</p>
+<p><span class="math display">\[7.3.1.\text{设函数 } f(x,y)=(x^2+y^2)\sin\frac{1}{x^2+y^2}(x^2+y^2\neq 0),0(x^2+y^2=0)\]</span></p>
+<p><span class="math display">\[\text{证明：（1）}f(x,y) \text{ 在 } (0,0) \text{可微. （2） }f_x(x,y),f_y(x,y) \text{ 在 }(0,0) \text{不连续.} \]</span></p>
+<p>（1）容易知道 <span class="math inline">\(f_x(0,0)=f_y(0,0)=0\)</span>, 从而</p>
+<p><span class="math display">\[\Delta f=f(0+\Delta x,0+\Delta y)-f(0,0)=((\Delta x)^2+(\Delta y)^2)\sin \frac{1}{x^2+y^2}\]</span></p>
+<p>因为有 <span class="math inline">\(\rho = (\Delta x)^2+(\Delta y)^2\)</span>,</p>
+<p><span class="math display">\[\Delta f=\frac{((\Delta x)^2+(\Delta y)^2)\sin \frac{1}{x^2+y^2}}{\sqrt{(\Delta x)^2+(\Delta y)^2}}=\rho\sin\frac{1}{\rho ^2}\rightarrow0 (\rho\rightarrow0)\]</span></p>
+<p>此即全微分定义. 故可微.</p>
+<p>（2）当 <span class="math inline">\((x,y)\neq (0,0)\)</span> 时，有</p>
+<p><span class="math display">\[f_x(x,y)=2x\sin\frac{1}{x^2+y^2}-\frac{2x}{(x^2+y^2)}\cos\frac{1}{x^2+y^2}\]</span></p>
+<p><span class="math display">\[f_y(x,y)=2y\sin\frac{1}{x^2+y^2}-\frac{2y}{(x^2+y^2)}\cos\frac{1}{x^2+y^2}\]</span></p>
+<p><span class="math display">\[f_x(x,0)=2x\sin\frac{1}{x^2}-\frac{2}{x}\cos\frac{1}{x^2}\]</span></p>
+<p>可以看出偏导数在 <span class="math inline">\((0,0)\)</span> 不存在，故不连续.</p>
+<p>这是第三个结论，“充分条件”的一个反例.</p>
+<p><span class="math display">\[7.3.3. \text{证明：}f(x,y)=\sqrt{|xy|}\text{在}(0,0)\text{处不可微.}\]</span></p>
+<p>利用定义：</p>
+<blockquote>
+<p>若 函数 <span class="math inline">\(f(x,y)\)</span> 在点 <span class="math inline">\(P_0(x_0,y_0)\)</span> 处的全增量</p>
+</blockquote>
+<blockquote>
+<p><span class="math display">\[ \Delta z=f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)\quad(1)\]</span></p>
+</blockquote>
+<blockquote>
+<p>可以表示为</p>
+</blockquote>
+<blockquote>
+<p><span class="math display">\[\Delta z=A\Delta x+B\Delta y+o(\rho) \quad(2)\]</span></p>
+</blockquote>
+<blockquote>
+<p>其中 <span class="math inline">\(A,B\)</span> 只和点 <span class="math inline">\((x_0,y_0)\)</span> 有关，而与 <span class="math inline">\(\Delta x,\Delta y\)</span> 无关，<span class="math inline">\(\rho = \sqrt{(\Delta x)^2+(\Delta y)^2}\)</span>，则该函数在 <span class="math inline">\(P_0\)</span> 可微，且 <span class="math inline">\(A\Delta x+B\Delta y\)</span> 为其在该点的全微分。</p>
+</blockquote>
+<p>那么利用 <span class="math inline">\(\Delta z-\Delta z=f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)-A\Delta x-B\Delta y\)</span> 得到 <span class="math inline">\(o(\rho)\)</span> ，再除以 <span class="math inline">\(\rho\)</span> ，得出的结果为 <span class="math inline">\(0\)</span> 则说明确实是无穷小，不为0则不可微。</p>
+<p><span class="math display">\[\mathop{\lim}\limits_{\Delta x\rightarrow 0\atop \Delta y\rightarrow0 }\frac{[f(0+\Delta x,0+\Delta y)-f(0,0)]-[f_x(0,0)\Delta x+f_y(0,0)\Delta y]}{\sqrt{(\Delta x)^2+(\Delta y)^2}}=\mathop{\lim}\limits_{\Delta x\rightarrow 0\atop \Delta y\rightarrow0 }\frac{\sqrt{|\Delta x\Delta y|}}{\sqrt{(\Delta x)^2+(\Delta y)^2}}\]</span></p>
+<p>不存在。故不可微。</p>
+<p>一般证明可微或不可微的步骤：</p>
+<p>1.先求出偏导数 <span class="math inline">\(f_x(x_0,y_0),f_y(x_0,y_0)\)</span>，若不存在则不可微</p>
+<p>2.计算 <span class="math inline">\(\Delta z=f(0+\Delta x,0+\Delta y)-f(0,0)\)</span> 的存在性，若不存在则不可微。</p>
+<p>3.计算 <span class="math inline">\(\frac{f(x_0+\Delta x,y_0+\Delta y)-f(x_0,y_0)-f_x(x_0,y_0)\Delta x-f_y(x_0,y_0)\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}\)</span> ，若等于 <span class="math inline">\(0\)</span> 则可微。</p>
+<p>判断是否为 <span class="math inline">\(0\)</span> 常用找一条路径 <span class="math inline">\(\Delta y=k(\Delta x)^a\)</span>，使得沿这条路径的极限不为0或不存在。</p>
+<p>补充一张互相推导的图：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/3aor39uf.png" /></p>
+<p><span class="math display">\[7.3.2\quad u=f(x,y),g(x,y,z)=0,h(x,z)=0, \text{求}\frac{\mathrm{d}u}{\mathrm dx}\]</span></p>
+<p>由全微分形式不变性，两边微分可得</p>
+<p><span class="math display">\[\mathrm{d}u=f_x\mathrm{d}x+f_y\mathrm{d}y\]</span></p>
+<p><span class="math display">\[g_x\mathrm dx+g_y\mathrm dy+g_z\mathrm{d}z=0\]</span></p>
+<p><span class="math display">\[h_x\mathrm d x+h_z\mathrm{d}z=0\]</span></p>
+<p>由二式解出 <span class="math inline">\(\mathrm d y\)</span> 关于 <span class="math inline">\(\mathrm dx,\mathrm dz\)</span> 的表达式</p>
+<p>由三式解出 <span class="math inline">\(\mathrm d z\)</span> 关于 <span class="math inline">\(\mathrm dx\)</span> 的表达式</p>
+<p>代入一式得 <span class="math inline">\(\frac{\mathrm{d}u}{\mathrm dx}=f_x-\frac{f_yg_x}{g_y}+\frac{f_yg_zh_x}{g_yh_z}\)</span></p>
+<h2 id="第四节-多元复合函数的求导法则">第四节 多元复合函数的求导法则</h2>
+<p><span class="math display">\[ 7.4.2\quad  \text{已知 }e^{-xy}-2z+e^z=0,\text{求} \frac{\partial z}{\partial x},\frac{\partial z}{\partial  y}\]</span></p>
+<p><span class="math display">\[\mathrm{d}(e^{-xy}-2z+e^z)=0\]</span></p>
+<p><span class="math display">\[e^{-xy}\mathrm{d}(-xy)-2z\mathrm{d}z+e^z\mathrm{d}z=0\]</span></p>
+<p><span class="math display">\[(e^z-2)\mathrm{d}z=e^{-xy}(x\mathrm{d}y+y\mathrm{d}x)\]</span></p>
+<p>利用全微分的形式不变性，得到</p>
+<p><span class="math display">\[\mathrm{d}z=\frac{ye^{-xy}}{(e^z-2)}\mathrm{d}x+\frac{xe^{-xy}}{(e^z-2)}\mathrm{d}y\]</span></p>
+<p>从而</p>
+<p><span class="math display">\[\frac{\partial z}{\partial x}=\frac{ye^{-xy}}{(e^z-2)},\frac{\partial z}{\partial  y}=\frac{xe^{-xy}}{(e^z-2)}\]</span></p>
+<p>利用下一节介绍的隐函数求导法也可以得到这一结果：</p>
+<p><span class="math display">\[F=e^{-xy}-2z+e^z=0\]</span></p>
+<p><span class="math display">\[F_x=-ye^{-xy}\]</span></p>
+<p><span class="math display">\[F_y=-xe^{-xy}\]</span></p>
+<p><span class="math display">\[F_z=-2+e^z\]</span></p>
+<p><span class="math display">\[\frac{\partial z}{\partial x}=\frac{F_x}{F_z}=\frac{ye^{-xy}}{(e^z-2)},\frac{\partial z}{\partial  y}=\frac{F_y}{F_z}=\frac{xe^{-xy}}{(e^z-2)}\]</span></p>
+<p><span class="math display">\[7.4.3\quad \text{设 } f(x,y) \text{ 是 } k \text{ 次齐次函数，即 }f(tx,ty,tz)=t^kf(x,y,z),\lambda \text{为某一常数，则下列结论正确的是：}\]</span></p>
+<p><span class="math display">\[(A)x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial v}+z\frac{\partial f}{\partial z}=k^\lambda f(x,y,z)\]</span></p>
+<p><span class="math display">\[(B)x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial v}+z\frac{\partial f}{\partial z}=\lambda^k f(x,y,z)\]</span></p>
+<p><span class="math display">\[(C)x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial v}+z\frac{\partial f}{\partial z}=kf(x,y,z)\]</span></p>
+<p><span class="math display">\[(D)x\frac{\partial f}{\partial x}+y\frac{\partial f}{\partial v}+z\frac{\partial f}{\partial z}= f(x,y,z)\]</span></p>
+<p>令 <span class="math inline">\(u=tx,v=ty,w=tz\)</span> ，则 <span class="math inline">\(f(u,v,w)=t^kf(x,y,z)\)</span></p>
+<p>两边对 <span class="math inline">\(t\)</span> 求导，得</p>
+<p><span class="math display">\[\frac{\partial f}{\partial u}\cdot\frac{\partial u}{\partial t}+\frac{\partial f}{\partial v}\cdot\frac{\partial v}{\partial t}+\frac{\partial f}{\partial w}\cdot\frac{\partial w}{\partial t}=kt^{k-1}f(x,y,z)\]</span></p>
+<p>即</p>
+<p><span class="math display">\[\frac{\partial f}{\partial u}\cdot x+\frac{\partial f}{\partial v}\cdot y+\frac{\partial f}{\partial w}\cdot z=kt^{k-1}f(x,y,z)\]</span></p>
+<p>两边同乘 <span class="math inline">\(t\)</span> ，得：</p>
+<p><span class="math display">\[\frac{\partial f}{\partial u}\cdot u+\frac{\partial f}{\partial v}\cdot v+\frac{\partial f}{\partial w}\cdot w=kt^{k}f(x,y,z)=kf(u,v,w)\]</span></p>
+<p>故选 <span class="math inline">\(C\)</span>.</p>
+<p><span class="math display">\[7.4.4. \quad x=e^u\cos v,y=e^u\sin v,z=uv,\text{ 求 }\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}\]</span></p>
+<p><span class="math display">\[\frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial x}=v\cdot \frac{\partial u}{\partial x}+u\cdot \frac{\partial v}{\partial x}\]</span></p>
+<p>对 $ x=e<sup>uv,y=e</sup>uv$ 对 <span class="math inline">\(x\)</span> 求偏导，得到</p>
+<p><span class="math display">\[1=e^u\frac{\partial u}{\partial x}\cos v-e^u\sin v\frac{\partial v}{\partial x}\]</span></p>
+<p><span class="math display">\[0=e^u\frac{\partial u}{\partial x}\sin v+e^u\cos v\frac{\partial v}{\partial x}\]</span></p>
+<p>解出 <span class="math inline">\(\frac{\partial u}{\partial x},\frac{\partial v}{\partial x}\)</span> ，代入公式即得 <span class="math inline">\(\frac{\partial z}{\partial x}\)</span>，<span class="math inline">\(\frac{\partial z}{\partial y}\)</span> 同理.</p>
+<p><span class="math display">\[7.4.5.\text{设变换 }u=x-2y,v=x+ay \text{可以将方程 } 6\frac{\partial^2z}{\partial x^2}+\frac{\partial^2z}{\partial x\partial y}-\frac{\partial^2z}{\partial y^2}\text{ 简化为 }\frac{\partial^2z}{\partial u\partial v}=0, \text{求常数 }a\]</span></p>
+<p><span class="math display">\[\frac{\partial z}{\partial x}=\frac{\partial z}{\partial u}\cdot \frac{\partial u}{\partial x}+\frac{\partial z}{\partial v}\cdot \frac{\partial v}{\partial x}=\frac{\partial z}{\partial u}+\frac{\partial z}{\partial v}\]</span></p>
+<p><span class="math display">\[\frac{\partial z}{\partial y}=-2\frac{\partial z}{\partial u}+a\frac{\partial z}{\partial v}\]</span></p>
+<p><span class="math display">\[\frac{\partial^2 z}{\partial x\partial y}=\frac{\partial^2 z}{\partial u^2}\cdot\frac{\partial u}{\partial y}+\frac{\partial^2 z}{\partial u\partial v}\cdot\frac{\partial u}{\partial y}+\frac{\partial^2 z}{\partial u\partial v}\cdot\frac{\partial v}{\partial y}+\frac{\partial^2 z}{\partial v^2}\cdot\frac{\partial v}{\partial y}\]</span></p>
+<p><span class="math display">\[\frac{\partial^2 z}{\partial x\partial y}=-2\frac{\partial^2 z}{\partial u^2}-2\frac{\partial^2 z}{\partial v\partial u}+a\frac{\partial^2 z}{\partial u\partial v}+a\frac{\partial^2 z}{\partial v^2}\]</span></p>
+<p><span class="math display">\[\frac{\partial^2 z}{\partial x^2}=\frac{\partial^2 z}{\partial u^2}+\frac{\partial^2 z}{\partial u\partial v}+\frac{\partial^2 z}{\partial v\partial u}+\frac{\partial^2 z}{\partial v^2}\]</span></p>
+<p><span class="math display">\[\frac{\partial^2 z}{\partial y^2}=4\frac{\partial^2 z}{\partial u^2}-2a\frac{\partial^2 z}{\partial u\partial v}-2a\frac{\partial^2 z}{\partial v\partial u}+a^2\frac{\partial^2 z}{\partial v^2}\]</span></p>
+<p>根据题设，合并同类项，得到 <span class="math inline">\(6+a-a^2=0,10+5a\neq 0\)</span> ，即<span class="math inline">\(a=3.\)</span></p>
+<h2 id="第五节-隐函数求导法">第五节 隐函数求导法</h2>
+<p>隐函数存在定理：</p>
+<blockquote>
+<p>设二元函数 <span class="math inline">\(F(x,y)\)</span> 在点 <span class="math inline">\(P(x_0,y_0)\)</span> 的某一邻域内满足：</p>
+</blockquote>
+<blockquote>
+<p>(1)具有连续偏导数</p>
+</blockquote>
+<blockquote>
+<p>(2)<span class="math inline">\(F(x_0,y_0)=0\)</span></p>
+</blockquote>
+<blockquote>
+<p>(3)<span class="math inline">\(F_y(x_0,y_0)=0\)</span></p>
+</blockquote>
+<blockquote>
+<p>则 函数 <span class="math inline">\(F(x,y)\)</span> 在点 <span class="math inline">\(P(x_0,y_0)\)</span> 的某一邻域 的某一邻域内恒能唯一确定一个具有连续导数的函数 <span class="math inline">\(y=f(x)\)</span> ，它满足 <span class="math inline">\(y_0=f(x_0)\)</span> ，并有 <span class="math inline">\(-\frac{F_x(x,y)}{F_y(x,y)}\)</span></p>
+</blockquote>
+<p>多元函数的情况是类似的。</p>
+<p>本书对证明不做要求 <del>，这里补充一个证明：</del> ，但是他太长了，不写了。</p>
+<p>推广到多元：</p>
+<p><span class="math display">\[-\mathrm{d}z=\frac{F_{x_1}}{F_z}\mathrm{d}x_1+\frac{F_{x_2}}{F_z}\mathrm{d}x_2+\cdots+\frac{F_{x_n}}{F_z}\mathrm{d}x_n\]</span></p>
+<p><span class="math display">\[7.5.1. \text{设函数 } f(x,y) \text{ 有连续偏导数，试用极坐标的转换公式 } x=r\cos \theta,y=r\sin \theta\text{ 将 } x\frac{\partial u}{\partial y}-y\frac{\partial u}{\partial x}\text{变化为}r,\theta\text{ 下的表达式.}\]</span></p>
+<p>可以将 <span class="math inline">\(r,\theta\)</span> 视为自变量， <span class="math inline">\(x,y\)</span> 视为中间变量。也可以反过来将 <span class="math inline">\(x,y\)</span> 视为自变量，将 <span class="math inline">\(r,\theta\)</span> 视为中间变量，这两种视角都导出一种可行的解法。</p>
+<p>法一，将 <span class="math inline">\(x,y\)</span> 视为中间变量</p>
+<p>根据条件，有：</p>
+<p><span class="math display">\[\frac{\partial x}{\partial \theta}=-r\sin\theta=-y,\frac{\partial y}{\partial \theta}=r\cos\theta=x\]</span></p>
+<p><span class="math display">\[\frac{\partial u}{\partial \theta} =\frac{\partial u}{\partial x}\cdot\frac{\partial x}{\partial \theta}+\frac{\partial u}{\partial y}\cdot \frac{\partial y}{\partial \theta}=-(x\frac{\partial u}{\partial u}-y\frac{\partial u}{\partial x})\]</span></p>
+<p>故</p>
+<p><span class="math display">\[x\frac{\partial u}{\partial u}-y\frac{\partial u}{\partial x}=-\frac{\partial u}{\partial \theta}\]</span></p>
+<h2 id="第六节-方向导数与梯度">第六节 方向导数与梯度</h2>
+<p>方向导数存在的充分条件：</p>
+<blockquote>
+<p>如果函数 <span class="math inline">\(f(x,y)\)</span> 在 <span class="math inline">\(P_0(x_0,y_0)\)</span> 可微分，那么函数在该点沿任意方向 <span class="math inline">\(\boldsymbol{l}\)</span> 的方向导数存在，且有：</p>
+</blockquote>
+<blockquote>
+<p><span class="math display">\[\frac{\partial f}{\partial \boldsymbol{l}}\Biggr |_{P_0}=f_x(x_0,y_0)\cos \alpha+f_y(x_0,y_0)\cos \beta\]</span></p>
+</blockquote>
+<blockquote>
+<p>其中 <span class="math inline">\(\cos \alpha,\cos \beta\)</span> 是方向 <span class="math inline">\(\boldsymbol{l}\)</span> 的方向余弦.</p>
+</blockquote>
+<h2 id="第八节-多元函数的极值">第八节 多元函数的极值</h2>
+<p><span class="math display">\[  7.8.1 \text{ 在第一卦限内作椭球面 }\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1 \text{ 的切平面使得该切平面与三个坐标平面围成的四面体的体积最小，求切点的坐标.} \]</span></p>
+<p>设切点 <span class="math inline">\((x_0,y_0,z_0)\)</span> 可以得到法平面方程 <span class="math inline">\((x-x_0)\frac{x_0}{a^2}+(y-y_0)\frac{y_0}{b^2}+(z-z_0)\frac{z_0}{c^2}=0\)</span>，即</p>
+<p><span class="math display">\[\frac{xx_0}{a^2}+\frac{yy_0}{b^2}+\frac{zz_0}{c^2}=1\]</span></p>
+<p><span class="math display">\[V=\frac{a^2b^2c^2}{6x_0y_0z_0}\]</span></p>
+<p>实际上就是求 <span class="math inline">\(V\)</span> 在 <span class="math inline">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1\)</span> 条件下的最值。</p>
+<p>但是 <span class="math inline">\(V\)</span> 太难求偏导了，改为求 <span class="math inline">\(x_0y_0z_0\)</span> 的最大值</p>
+<p>于是设 <span class="math inline">\(F=xyz+\lambda(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}-1)\)</span></p>
+<p>但是这样 <span class="math inline">\(F_x\)</span> 和 <span class="math inline">\(x,y,z\)</span> 都相关，于是改设 <span class="math inline">\(F=\ln x+\ln y +\ln z+\lambda(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}-1)\)</span></p>
+<p>这样每个偏导数的表达式都只与其主元相关，大大方便了计算.</p>
+<p>得到结果 <span class="math inline">\(x_0=\frac{a}{\sqrt 3},y_0=\frac{b}{\sqrt 3},z_0=\frac{c}{\sqrt 3}\)</span>.</p>
+<p>最小二乘法：极值的运用。</p>
+<p>对于多组样本点，找一条直线拟合使得偏差的平方和最小：</p>
+<p>计偏差函数 <span class="math inline">\(M=\sum_{i=0}^t[y_i-(at_i+b)]\)</span></p>
+<p><span class="math display">\[\frac{\partial M}{\partial a}=0,\frac{\partial M}{\partial b}=0\]</span></p>
+<p>从而得到驻点：</p>
+<p><span class="math display">\[a=\frac{n\sum_{i=1}^{n}x_iy_i-(\sum_{i=1}^{n}x_i)(\sum_{i=1}^{n}y_i)}{n\sum_{i=1}^{n}x_i^2-(\sum_{i=1}^{n}x_i)^2}\]</span></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://cesonic.github.io">CSonic</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://cesonic.github.io/2023/05/09/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%EF%BC%88%E4%B8%8B%EF%BC%89%E7%AC%AC%E4%B8%83%E7%AB%A0%E6%95%99%E6%9D%90%E8%A1%A5%E5%85%85%E4%B8%8E%E4%B9%A0%E9%A2%98%E9%80%89/">http://cesonic.github.io/2023/05/09/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%EF%BC%88%E4%B8%8B%EF%BC%89%E7%AC%AC%E4%B8%83%E7%AB%A0%E6%95%99%E6%9D%90%E8%A1%A5%E5%85%85%E4%B8%8E%E4%B9%A0%E9%A2%98%E9%80%89/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/math/">math</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/05/08/WBLT%EF%BC%9A%E4%B8%80%E7%A7%8D%E6%AF%94%E8%BE%83%E5%B0%91%E8%A7%81%E7%9A%84%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="WBLT：一种比较少见的平衡树"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">WBLT：一种比较少见的平衡树</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">CSonic</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/cesonic"><i class="fab fa-github"></i><span>我的 GitHub 主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:codesonic@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=937643490&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">已经提供对 latex 的支持！但是latex柿子的显示出现了一点问题（不知道什么情况下latex式子下会出现滑动条）</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%8A%82-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">第一节 多元函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E5%81%8F%E5%AF%BC%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">第二节 偏导数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%85%A8%E5%BE%AE%E5%88%86%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">第三节 全微分及其应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E8%8A%82-%E5%A4%9A%E5%85%83%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E7%9A%84%E6%B1%82%E5%AF%BC%E6%B3%95%E5%88%99"><span class="toc-number">4.</span> <span class="toc-text">第四节 多元复合函数的求导法则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E8%8A%82-%E9%9A%90%E5%87%BD%E6%95%B0%E6%B1%82%E5%AF%BC%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text">第五节 隐函数求导法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E8%8A%82-%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E4%B8%8E%E6%A2%AF%E5%BA%A6"><span class="toc-number">6.</span> <span class="toc-text">第六节 方向导数与梯度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E8%8A%82-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC"><span class="toc-number">7.</span> <span class="toc-text">第八节 多元函数的极值</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/09/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%EF%BC%88%E4%B8%8B%EF%BC%89%E7%AC%AC%E4%B8%83%E7%AB%A0%E6%95%99%E6%9D%90%E8%A1%A5%E5%85%85%E4%B8%8E%E4%B9%A0%E9%A2%98%E9%80%89/" title="高等数学（下）第七章教材补充与习题选">高等数学（下）第七章教材补充与习题选</a><time datetime="2023-05-08T18:05:50.000Z" title="Created 2023-05-09 02:05:50">2023-05-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/08/WBLT%EF%BC%9A%E4%B8%80%E7%A7%8D%E6%AF%94%E8%BE%83%E5%B0%91%E8%A7%81%E7%9A%84%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="WBLT：一种比较少见的平衡树">WBLT：一种比较少见的平衡树</a><time datetime="2023-05-08T13:37:31.000Z" title="Created 2023-05-08 21:37:31">2023-05-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/08/Hello-World-0/" title="Hello World!">Hello World!</a><time datetime="2023-05-08T06:06:46.000Z" title="Created 2023-05-08 14:06:46">2023-05-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By CSonic</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
