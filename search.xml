@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>大学物理上-热学公式整理</title>
+      <link href="/2023/06/16/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A-%E7%83%AD%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%95%B4%E7%90%86/"/>
+      <url>/2023/06/16/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A-%E7%83%AD%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="大物热学公式">大物热学公式</h2><p><span class="math display">\[pV=vRT\]</span></p><p><span class="math display">\[v=\frac{m&#39;}{M},\text{用摩尔质量计算的摩尔数};R=\frac{p_0v_0}{T_0},\text{普适气体恒量，8.31(4)}\]</span></p><p><span class="math display">\[p=nkT\]</span></p><p><span class="math display">\[n=N/V,\text{分子数密度};k,\text{玻尔兹曼常数}1.380649 ×\times 10^{-23} J/K\text{，满足}R=kN_A\]</span></p><p>压强公式</p><p><span class="math display">\[p=\frac{1}{3}nm\overline {v^2} =\frac{2}{3}n\overline\omega,\overline \omega \text{是平均动能}\]</span></p><p>温度公式</p><p><span class="math display">\[\overline \omega =\frac{3}{2}kT\]</span></p><p>内能公式</p><p><span class="math display">\[U=\frac{m&#39;}{M}\frac{i}{2}RT=\frac{i}{2}vRT=\frac{i}{2}pV\]</span></p><p>最概然速率</p><p><span class="math display">\[v_p=\sqrt{\frac{2kT}{m}}=\sqrt{\frac{2RT}{M}}\approx 1.41\sqrt{\frac{RT}{M}}\]</span></p><p><span class="math display">\[m,\text{分子质量};M,\text{摩尔质量}\]</span></p><p>平均速率</p><p><span class="math display">\[\overline v=\sqrt{\frac{8kT}{\pi m}}=\sqrt{\frac{8RT}{\pi M}}\approx 1.60\sqrt{\frac{RT}{M}}\]</span></p><p>方均根速率</p><p><span class="math display">\[\sqrt{\overline {v^2}}=\sqrt{\frac{3kT}{m}}=\sqrt{\frac{3RT}{M}}\approx 1.73\sqrt{\frac{RT}{M}}\]</span></p><p>分子平均碰撞次数</p><p><span class="math display">\[\overline Z=\sqrt{2}\pi d^2\overline vn\]</span></p><p>平均自由程</p><p><span class="math display">\[\overline \lambda =\frac{\overline v}{\overline Z}=\frac{1}{\sqrt{2}\pi d^2n}=\frac{kT}{\sqrt{2}\pi d^2p}\]</span></p><h3 id="热力学第一定律">热力学第一定律</h3><p><span class="math display">\[ W= \int_{V_1}^{V_2}p\mathrm{d}V,\text{即所谓做功为曲线与 p-V 图 x 轴围成面积}\]</span></p><p><span class="math display">\[Q=\Delta E+W,\text{吸收热量等于内能增加量加对外做功}\]</span></p><p>等容摩尔热容量</p><p><span class="math display">\[\mathrm{d}E=\frac{i}{2}R\mathrm{d}T\]</span></p><p><span class="math display">\[C_v=\frac{i}{2}R\]</span></p><p>等压摩尔热容量</p><p>比起等容摩尔热容量，还需要对外做功。</p><p><span class="math display">\[(v=1),C_p=\frac{\mathrm{d}Q_p}{\mathrm{d}T}=\frac{\mathrm{d}E+p\mathrm{d}V}{\mathrm{d}T}=\frac{\frac{i}{2}R\mathrm{d}T+R\mathrm{d}T}{\mathrm{d}T}=\frac{i}{2}R\mathrm{d}T+R=C_v+R\]</span></p><p>比热容比 <span class="math inline">\(\gamma\)</span></p><p><span class="math display">\[\gamma=\frac{C_p}{C_V}=\frac{i+2}{i}\]</span></p><p><span class="math display">\[Q=vC_v(T_2-T_1)\text{（等容）}\]</span></p><p><span class="math display">\[Q=vC_p(T_2-T_1)\text{（等压）}\]</span></p><p>通式</p><p><span class="math display">\[Q=\Delta E +W\]</span></p><p><span class="math display">\[W=\int_{V_1}^{V_2}p\mathrm{d}V\]</span></p><p><span class="math display">\[\Delta E=\frac{m&#39;}{M}\frac{i}{2}R\Delta T\]</span></p><p>绝热过程 <span class="math inline">\(p-V\)</span> 方程</p><p><span class="math display">\[pV^\gamma=C\]</span></p><p>由 <span class="math inline">\(pV=vRT=C_1T\)</span>，</p><p><span class="math display">\[TV^{\gamma-1}=C\]</span></p><p><span class="math display">\[p^{\gamma-1}T^{-\gamma}=C\]</span></p><p>（绝热线比等温线陡）</p><p><span class="math display">\[W=\frac{p_2V_2-p_1V_1}{1-\gamma}=-\Delta E\]</span></p><p>热机效率</p><p><span class="math display">\[\eta = \frac{W}{Q_1}=\frac{Q_1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1},\text{Q1Q2表示从高温热源吸热，向低温热源放热}\]</span></p><p>制冷机制冷系数</p><p><span class="math display">\[e=\frac{Q_2}{W}=\frac{Q_2}{Q_1-Q_2}\text{（Q1Q2，向高温热源放热，从低温热源吸热）W:工件对外界做功}\]</span></p><p>若为卡诺制冷机，还有</p><p><span class="math display">\[e=\frac{Q_2}{W}=\frac{Q_2}{Q_1-Q_2}=\frac{T_2}{T_1-T_2}\]</span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 课程笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《概率论与数理统计》定义/性质速通</title>
       <link href="/2023/05/17/%E3%80%8A%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E3%80%8B%E5%AE%9A%E4%B9%89-%E6%80%A7%E8%B4%A8%E9%80%9F%E9%80%9A/"/>
       <url>/2023/05/17/%E3%80%8A%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E3%80%8B%E5%AE%9A%E4%B9%89-%E6%80%A7%E8%B4%A8%E9%80%9F%E9%80%9A/</url>
