@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>邱关源电路复习简要笔记 | CSonic's Blog</title><meta name="author" content="CSonic"><meta name="copyright" content="CSonic"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="最大功率传输定理 负载可以任意变化： 当求负载 \(Z_L\) 的最大功率时，现将负载之外的电路用戴维宁等效电路替换为 \(&lt;U_S,Z_S&gt;\) 此时有 \(Z_S&#x3D;\overline{Z_C}\) 时负载获得功率最大。 耦合电感串联： 顺接串联：\(L_{eq}&#x3D;L_1+L_2+2M\) 反接串联：\(L_{eq}&#x3D;L_1+L_2-2M\) 耦合电感并联： 同侧并联">
+<meta property="og:type" content="article">
+<meta property="og:title" content="邱关源电路复习简要笔记">
+<meta property="og:url" content="http://cesonic.github.io/2023/06/21/%E9%82%B1%E5%85%B3%E6%BA%90%E7%94%B5%E8%B7%AF%E5%A4%8D%E4%B9%A0%E7%AE%80%E8%A6%81%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="CSonic&#39;s Blog">
+<meta property="og:description" content="最大功率传输定理 负载可以任意变化： 当求负载 \(Z_L\) 的最大功率时，现将负载之外的电路用戴维宁等效电路替换为 \(&lt;U_S,Z_S&gt;\) 此时有 \(Z_S&#x3D;\overline{Z_C}\) 时负载获得功率最大。 耦合电感串联： 顺接串联：\(L_{eq}&#x3D;L_1+L_2+2M\) 反接串联：\(L_{eq}&#x3D;L_1+L_2-2M\) 耦合电感并联： 同侧并联">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-06-21T08:16:31.000Z">
+<meta property="article:modified_time" content="2023-06-26T03:42:39.583Z">
+<meta property="article:author" content="CSonic">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/35N%5DST33T9YLOJT%7DFV8BDF0.gif"><link rel="canonical" href="http://cesonic.github.io/2023/06/21/%E9%82%B1%E5%85%B3%E6%BA%90%E7%94%B5%E8%B7%AF%E5%A4%8D%E4%B9%A0%E7%AE%80%E8%A6%81%E7%AC%94%E8%AE%B0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '邱关源电路复习简要笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-06-26 11:42:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = 'hidden';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+
+preloader.initLoading()
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="CSonic's Blog"><span class="site-name">CSonic's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">邱关源电路复习简要笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-06-21T08:16:31.000Z" title="Created 2023-06-21 16:16:31">2023-06-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-06-26T03:42:39.583Z" title="Updated 2023-06-26 11:42:39">2023-06-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">760</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>3min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="邱关源电路复习简要笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>最大功率传输定理</p>
+<p>负载可以任意变化：</p>
+<p>当求负载 <span class="math inline">\(Z_L\)</span> 的最大功率时，现将负载之外的电路用戴维宁等效电路替换为 <span class="math inline">\(&lt;U_S,Z_S&gt;\)</span></p>
+<p>此时有 <span class="math inline">\(Z_S=\overline{Z_C}\)</span> 时负载获得功率最大。</p>
+<p>耦合电感串联：</p>
+<p>顺接串联：<span class="math inline">\(L_{eq}=L_1+L_2+2M\)</span></p>
+<p>反接串联：<span class="math inline">\(L_{eq}=L_1+L_2-2M\)</span></p>
+<p>耦合电感并联：</p>
+<p>同侧并联：同名端连接在同一个节点上：</p>
+<p>可解得 <span class="math inline">\(L_{eq}=\frac{(L_1L_2-M^2)}{L_1+L_2-2M}\)</span></p>
+<p>异侧并联：异名端连接在同一个节点上：</p>
+<p>可解得 <span class="math inline">\(L_{eq}=\frac{(L_1L_2-M^2)}{L_1+L_2+2M}\)</span></p>
+<p>并联电感注意去耦合后两点电压位置会发生移动。</p>
+<p>复功率：<span class="math inline">\(W=U\overline I\)</span></p>
+<p>耦合因数：<span class="math inline">\(k=\frac{M}{\sqrt{L_1L_2}}\)</span></p>
+<p>理想变压器 （输入：输出= <span class="math inline">\(n:1\)</span> ） 输出端接阻抗 <span class="math inline">\(Z_L\)</span> 时，其输入端等效阻抗为 <span class="math inline">\(n^2Z_L\)</span></p>
+<hr />
+<p>三相电压 <span class="math inline">\(U_A,U_B,U_C\)</span></p>
+<p>（<span class="math inline">\(U_C\)</span> 超前 <span class="math inline">\(U_A\rightarrow\)</span> 正序，对称三相电路）假设 <span class="math inline">\(\dot{U}_A=U_A\angle 0^{\circ},U_A=U_B=U_C,\dot{U}_B=\dot{U}_A\angle -120^{\circ},\dot{U}_C=\dot{U}_A\angle 120^{\circ}\)</span></p>
+<p>电源侧，电流测三角形连接和星（Y）形连接</p>
+<p><img src="D:\Blog\source_posts\邱关源电路复习简要笔记\星形和三角形.jpg" /></p>
+<p>二、<span class="math inline">\(Y-Y\)</span> 三相四线制</p>
+<p><img src="D:\Blog\source_posts\邱关源电路复习简要笔记\三相四线制.jpg" /></p>
+<p>相：一定通过某一个电源或负载</p>
+<p>线电压：两根导线之间的电压；线电流：经过导线的电流</p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 46%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">电源侧</th>
+<th style="text-align: center;">负载侧</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">相电压</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_A,\dot{U}_B,\dot{U}_C\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_A&#39;,\dot{U}_B&#39;,\dot{U}_C&#39;\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">相电流</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">线电压</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_{AB},\dot{U}_{BC},\dot{U}_{CA}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_{AB},\dot{U}_{BC},\dot{U}_{CA}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">线电流</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>判断四个量的关系一定要在同一侧</p>
+<p><img src="D:\Blog\source_posts\邱关源电路复习简要笔记\相电压与线电压的关系.jpg" /></p>
+<p>在本回路中，<span class="math inline">\(\dot{U}_A=\dot{U}_A&#39;,\dot{U}_B=\dot{U}_B&#39;,\dot{U}_C=\dot{U}_C&#39;\)</span>，故也满足上式</p>
+<p>相电流与线电流关系显然。</p>
+<p>三、 $Y-$ 连接</p>
+<p><img src="D:\Blog\source_posts\邱关源电路复习简要笔记\星形接三角形.jpg" /></p>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 46%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">电源侧</th>
+<th style="text-align: center;">负载侧</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">相电压</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_A,\dot{U}_B,\dot{U}_C\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_{AB},\dot{U}_{BC},\dot{U}_{CA}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">相电流</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_{AB},\dot{I}_{BC},\dot{I}_{CA}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">线电压</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_{AB},\dot{U}_{BC},\dot{U}_{CA}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{U}_{AB},\dot{U}_{BC},\dot{U}_{CA}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">线电流</td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dot{I}_A,\dot{I}_B,\dot{I}_C\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>电源侧四个量关系显然与之前一致，主要考虑负载侧</p>
+<p>负载侧：</p>
+<p>线电压=相电压</p>
+<p><span class="math display">\[\dot{I}_{AB}=\frac{\dot{U}_{AB}}{Z},\dot{I}_{BC}=\frac{\dot{U}_{BC}}{Z},\dot{I}_{CA}=\frac{\dot{U}_{CA}}{Z}\]</span> <span class="math inline">\(I_A=I_{AB}-I_{CA},I_B=I_{BC}-I_{AB},I_C=I_{CA}-I_{BC}\)</span></p>
+<p><span class="math inline">\(I_{AB}=\frac{U_{AB}}{Z},I_{BC}=\frac{U_{BC}}{Z},I_{CA}=\frac{U_{CA}}{Z}\)</span></p>
+<p><img src="D:\Blog\source_posts\邱关源电路复习简要笔记\相电流与电流的关系.jpg" /></p>
+<p>处理问题时，先把电源、负载化为星形连接</p>
+<p><span class="math inline">\(U_A&#39;=\frac{1}{\sqrt{3}}U_A\angle -30^{\circ}\)</span></p>
+<p><img src="D:\Blog\source_posts\邱关源电路复习简要笔记\负载的转换.png" /></p>
+<p>对称三相四线制电路，中性线上电流为0</p>
+<p>故每条线左右等电势，故有 <span class="math inline">\(I_A=\frac{U_A}{Z_A}\)</span></p>
+<p>Y-Y：<span class="math inline">\(p=3\dot{U}_A\dot{I}_A=\sqrt{3}U_{AB}I_A\)</span></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://cesonic.github.io">CSonic</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://cesonic.github.io/2023/06/21/%E9%82%B1%E5%85%B3%E6%BA%90%E7%94%B5%E8%B7%AF%E5%A4%8D%E4%B9%A0%E7%AE%80%E8%A6%81%E7%AC%94%E8%AE%B0/">http://cesonic.github.io/2023/06/21/%E9%82%B1%E5%85%B3%E6%BA%90%E7%94%B5%E8%B7%AF%E5%A4%8D%E4%B9%A0%E7%AE%80%E8%A6%81%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/06/16/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A-%E7%83%AD%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%95%B4%E7%90%86/" title="大学物理上-热学公式整理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">大学物理上-热学公式整理</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">CSonic</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/cesonic"><i class="fab fa-github"></i><span>我的 GitHub 主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:codesonic@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=937643490&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">新增了搜索和评论功能喵！latex 渲染的问题尚未解决。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/21/%E9%82%B1%E5%85%B3%E6%BA%90%E7%94%B5%E8%B7%AF%E5%A4%8D%E4%B9%A0%E7%AE%80%E8%A6%81%E7%AC%94%E8%AE%B0/" title="邱关源电路复习简要笔记">邱关源电路复习简要笔记</a><time datetime="2023-06-21T08:16:31.000Z" title="Created 2023-06-21 16:16:31">2023-06-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/16/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A-%E7%83%AD%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%95%B4%E7%90%86/" title="大学物理上-热学公式整理">大学物理上-热学公式整理</a><time datetime="2023-06-16T05:47:25.000Z" title="Created 2023-06-16 13:47:25">2023-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/17/%E3%80%8A%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E3%80%8B%E5%AE%9A%E4%B9%89-%E6%80%A7%E8%B4%A8%E9%80%9F%E9%80%9A/" title="《概率论与数理统计》定义/性质速通">《概率论与数理统计》定义/性质速通</a><time datetime="2023-05-17T11:22:51.000Z" title="Created 2023-05-17 19:22:51">2023-05-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/09/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0%E7%9F%A5%E8%AF%86%E6%91%98%E8%A6%81/" title="组合计数知识摘要">组合计数知识摘要</a><time datetime="2023-05-09T13:13:58.000Z" title="Created 2023-05-09 21:13:58">2023-05-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/09/%E7%94%A8-Latex-%E5%86%99%E5%8C%96%E5%AD%A6%E6%96%B9%E7%A8%8B%E5%BC%8F/" title="用 Latex 写化学方程式">用 Latex 写化学方程式</a><time datetime="2023-05-09T12:39:51.000Z" title="Created 2023-05-09 20:39:51">2023-05-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By CSonic</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typesetPromise()
+}</script><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '2bb45690924979eebbac',
+      clientSecret: 'e621224914d3c9e097a94cc480e58a2bfc5ec52b',
+      repo: 'BlogComments',
+      owner: 'cesonic',
+      admin: ['cesonic'],
+      id: 'ac75867989bd00ba20d0985f194accb3',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script>(function(d, w, c) {
+    w.ChatraID = 'YgRaJHyWtKkK6A3RB';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"right","width":150,"height":300,"hOffset":20,"vOffset":-20},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
